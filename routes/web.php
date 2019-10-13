@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return response()->json([ 'message' => 'Please contact the Administrator to access the Api...',
+        'email ' => 'g13.indra@gmail.com']);
 })->name('welcome');
